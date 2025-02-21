@@ -61,6 +61,22 @@ fun CoinListItem(
                 fontWeight = FontWeight.Bold,
                 color = contentColor
             )
+            Text(
+                text = coinUi.name,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Light,
+                color = contentColor
+            )
+        }
+        Column(
+            horizontalAlignment = Alignment.End
+        ) {
+            Text(
+                text = coinUi.priceUsd.formatted,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = contentColor
+            )
         }
     }
 }
