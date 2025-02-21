@@ -6,6 +6,8 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
@@ -25,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.dxsonu.cryptotracker.crypto.domain.Coin
 import com.dxsonu.cryptotracker.crypto.presentation.CoinUi
+import com.dxsonu.cryptotracker.crypto.presentation.DisplayableNumber
 import com.dxsonu.cryptotracker.crypto.presentation.toCoinUi
 import com.dxsonu.cryptotracker.ui.theme.CryptoTrackerTheme
 
@@ -76,6 +79,10 @@ fun CoinListItem(
                 fontSize = 16.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = contentColor
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            PriceChange(
+                change = coinUi.changePercent24Hr
             )
         }
     }
