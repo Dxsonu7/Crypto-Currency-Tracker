@@ -44,9 +44,8 @@ fun CoinListItem(
     }
 }
 
-@Preview
+
 @PreviewLightDark
-@PreviewDynamicColors
 @Composable
 private fun CoinListItemPreview(){
     CryptoTrackerTheme {
