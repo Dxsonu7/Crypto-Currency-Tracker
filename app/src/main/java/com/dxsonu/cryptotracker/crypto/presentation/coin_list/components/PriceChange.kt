@@ -59,7 +59,7 @@ fun PriceChange(
             tint = contentColor
         )
         Text(
-            text = change.formatted,
+            text = "${change.formatted} %",
             color = contentColor,
             fontSize = 14.sp
         )
@@ -73,7 +73,7 @@ private fun PriceChangePreview(){
         PriceChange(
             change = DisplayableNumber (
                 value = 2.43,
-                formatted = "2.43 %"
+                formatted = "2.43"
             )
         )
     }
