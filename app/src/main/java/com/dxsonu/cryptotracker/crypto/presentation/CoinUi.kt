@@ -3,7 +3,7 @@ package com.dxsonu.cryptotracker.crypto.presentation
 import android.icu.number.NumberFormatter
 import androidx.annotation.DrawableRes
 import com.dxsonu.cryptotracker.crypto.domain.Coin
-import com.dxsonu.cryptotracker.util.getDrawableIdForCoin
+import com.dxsonu.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import java.text.NumberFormat
 import java.util.Locale
 

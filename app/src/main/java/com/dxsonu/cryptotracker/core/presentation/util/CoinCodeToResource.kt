@@ -1,4 +1,4 @@
-package com.dxsonu.cryptotracker.util
+package com.dxsonu.cryptotracker.core.presentation.util
 
 import com.dxsonu.cryptotracker.R
 

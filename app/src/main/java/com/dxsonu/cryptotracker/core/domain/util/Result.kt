@@ -1,4 +1,4 @@
-package com.dxsonu.cryptotracker.util
+package com.dxsonu.cryptotracker.core.domain.util
 
 typealias DomainError = Error
 
